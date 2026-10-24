@@ -72,8 +72,10 @@ public class PleatherPlugin extends JavaPlugin implements Listener {
                 break;
             case SQUID:
                 dropMaterial = Material.INK_SAC;
+                break;
             case GLOW_SQUID:
                 dropMaterial = Material.GLOW_INK_SAC;
+                break;
             default:
                 return;
         }
