@@ -18,7 +18,7 @@ public class PleatherPlugin extends JavaPlugin implements Listener {
     // UUID -> letzter Zeitpunkt
     private final Map<UUID, Long> cooldowns = new HashMap<>();
 
-    private final long COOLDOWN = 60 * 1000; // 60 Sekunden
+    private final long COOLDOWN = 30 * 1000; // 60 Sekunden
 
     @Override
     public void onEnable() {
@@ -70,7 +70,10 @@ public class PleatherPlugin extends JavaPlugin implements Listener {
             case CHICKEN:
                 dropMaterial = Material.FEATHER;
                 break;
-
+            case SQUID:
+                dropMaterial = Material.INK_SAC;
+            case GLOW_SQUID:
+                dropMaterial = Material.GLOW_INK_SAC;
             default:
                 return;
         }
